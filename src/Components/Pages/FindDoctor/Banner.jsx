@@ -10,8 +10,8 @@ const Banner = () => {
         <div className="mt-12">
             <div className='relative'>
                 <img className='' src={banner1} alt="" />
-                <div className='absolute w-full h-[150px] bg-[#FFFBF2] z-10 -mt-16 border flex items-center'>
-                    <img className='w-40 -mt-9 ml-5' src={avatar} alt="" />
+                <div className='absolute w-full h-[165px] bg-[#FFFBF2] z-10 -mt-16 border flex items-center'>
+                    <img className='w-40 -mt-9 ml-7' src={avatar} alt="" />
                     <div className='mr-16 ml-5'>
                         <h1 className='text-xl font-semibold flex items-center gap-1'>Dr. Bruce Willis <span><HiBadgeCheck className='text-blue-800' /></span></h1>
                         <h3 className='text-sm font-semibold text-[#3A643B] my-1'>Gynecologist</h3>
@@ -31,7 +31,12 @@ const Banner = () => {
                             <h4 className='text-lg font-bold'>250</h4>
                         </div>
                     </div>
+                    <button className='bg-[#3A643B] py-2 px-7 rounded-lg text-base font-semibold text-[#fff] ml-32'>Book an Appointment</button>
                 </div>
+            </div>
+
+            <div>
+
             </div>
         </div>
     );
