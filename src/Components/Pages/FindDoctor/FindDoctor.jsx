@@ -1,5 +1,6 @@
 import AboutMe from "./AboutMe";
 import Banner from "./Banner";
+import SpecializeIn from "./SpecializeIn";
 
 const FindDoctor = () => {
     return (
@@ -8,6 +9,7 @@ const FindDoctor = () => {
             <div className="flex justify-between mt-32 gap-7">
                 <div className="flex-1  w-full">
                     <AboutMe/>
+                    <SpecializeIn/>
                 </div>
                 <div className="flex-1 border w-full">kjhkjh</div>
             </div>
