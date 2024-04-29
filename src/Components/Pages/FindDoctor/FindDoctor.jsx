@@ -2,6 +2,7 @@ import AboutMe from "./AboutMe";
 import Banner from "./Banner";
 import Concerns from "./Concerns";
 import MyExperience from "./MyExperience";
+import PickTimeSlot from "./PickTimeSlot";
 import Reviews from "./Reviews";
 import SelectSession from "./SelectSession";
 import SpecializeIn from "./SpecializeIn";
@@ -24,6 +25,7 @@ const FindDoctor = () => {
                         <p className="text-[#3A643B]">₹699.00</p>
                     </div>
                         <SelectSession/>
+                        <PickTimeSlot/>
                 </div>
             </div>
         </div>
