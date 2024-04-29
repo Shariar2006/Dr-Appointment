@@ -2,7 +2,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const SelectSession = () => {
     return (
-        <div>
+        <div aria-disabled>
             <div className="border-t border-gray-400 mt-10">
                 <p className="absolute text-xl font-semibold -mt-4 bg-white px-3 border-gray-500">Select your mode of session</p>
             </div>
