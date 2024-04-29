@@ -1,5 +1,6 @@
 import AboutMe from "./AboutMe";
 import Banner from "./Banner";
+import Concerns from "./Concerns";
 import SpecializeIn from "./SpecializeIn";
 
 const FindDoctor = () => {
@@ -10,6 +11,7 @@ const FindDoctor = () => {
                 <div className="flex-1  w-full">
                     <AboutMe/>
                     <SpecializeIn/>
+                    <Concerns/>
                 </div>
                 <div className="flex-1 border w-full">kjhkjh</div>
             </div>
