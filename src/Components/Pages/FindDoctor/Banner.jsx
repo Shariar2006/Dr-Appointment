@@ -1,42 +1,28 @@
-import banner1 from '../../../assets/banner1.png'
-import avatar from '../../../assets/avatar2.png'
-import { HiBadgeCheck } from "react-icons/hi";
-import { FaStar } from "react-icons/fa";
-
+import banner2 from '../../../assets/banner2.png'
+import { FaLocationDot } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { IoIosArrowDown } from "react-icons/io";
 
 
 const Banner = () => {
     return (
-        <div className="mt-12">
-            <div className='relative'>
-                <img className='' src={banner1} alt="" />
-                <div className='absolute w-full h-[165px] bg-[#FFFBF2] z-10 -mt-16 border flex items-center'>
-                    <img className='w-40 -mt-9 ml-7' src={avatar} alt="" />
-                    <div className='mr-16 ml-5'>
-                        <h1 className='text-xl font-semibold flex items-center gap-1'>Dr. Bruce Willis <span><HiBadgeCheck className='text-blue-800' /></span></h1>
-                        <h3 className='text-sm font-semibold text-[#3A643B] my-1'>Gynecologist</h3>
-                        <h1 className='flex items-center gap-1'>4.2 <span className='flex text-orange-500'><FaStar /><FaStar /><FaStar /><FaStar /></span></h1>
-                    </div>
-                    <div className='flex items-center justify-center gap-16 text-center'>
-                        <div>
-                            <h1 className='text-sm font-semibold text-[#3A643B]'>Followers</h1>
-                            <h4 className='text-lg font-bold'>850</h4>
-                        </div>
-                        <div>
-                            <h1 className='text-sm font-semibold text-[#3A643B]'>Following</h1>
-                            <h4 className='text-lg font-bold'>18k</h4>
-                        </div>
-                        <div>
-                            <h1 className='text-sm font-semibold text-[#3A643B]'>Post</h1>
-                            <h4 className='text-lg font-bold'>250</h4>
-                        </div>
-                    </div>
-                    <button className='bg-[#3A643B] py-2 px-7 rounded-lg text-base font-semibold text-[#fff] ml-32'>Book an Appointment</button>
-                </div>
-            </div>
-
+        <div>
             <div>
-
+                <img src={banner2} alt="" />
+                <div className='absolute -mt-44 ml-[420px] max-w-6xl mx-auto text-center'>
+                    <p className='text-2xl font-semibold mb-8'>Find expert Doctors for an In-clinic session here </p>
+                    <div className='flex justify-center items-center'>
+                            <div>
+                            <input className='w-[200px] border rounded-lg outline-none py-3 px-5 bg-white mr-3' type="text" name="" id="" />
+                            <span className='absolute flex items-center justify-center gap-3 text-[#3A643B] -mt-9 ml-5'><FaLocationDot/> <span className='text-gray-500'>Select Location</span> <IoIosArrowDown/></span>
+                            </div>
+                            <div>
+                            <input placeholder='eg. Doctor, specialisation, clinic name' className='w-[474px] border rounded-lg outline-none py-3 px-5 bg-white' type="text" name="" id="" />
+                            <span className='absolute mt-4 -ml-9'><FaArrowRightLong/></span>
+                            </div>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     );
