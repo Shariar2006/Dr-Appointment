@@ -5,6 +5,7 @@ import FindDoctor from "../Components/Pages/FindDoctor/FindDoctor";
 import AboutUs from "../Components/Pages/AboutUs/AboutUs";
 import Login from "../Components/Pages/Login/Login";
 import SingUp from "../Components/Pages/SingUp/SingUp";
+import DoctorAppointment from "../Components/Pages/DoctorApponitment/DoctorAppointment";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
             {
                 path: "/findDoctors",
                 element: <FindDoctor />,
+            },
+            {
+                path: "/doctorAppointment",
+                element: <DoctorAppointment />,
             },
             {
                 path: "/aboutUs",

@@ -8,8 +8,11 @@
 // import SelectShift from "./DoctorApponitment/SelectShift";
 // import SpecializeIn from "./DoctorApponitment/SpecializeIn";
 import { IoIosArrowDown } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
+
 
 import Banner from "./Banner";
+import DoctorCard from "./DoctorCard";
 
 const FindDoctor = () => {
     return (
@@ -25,30 +28,15 @@ const FindDoctor = () => {
                     <button className="text-[#3A643B] flex items-center gap-5 bg-[#dceedc] px-3 rounded-md py-1">Allfilters <IoIosArrowDown /></button>
                 </div>
             </div>
-        </div>
 
-        // <div className="max-w-7xl mx-auto">
-        //     <Banner/>
-        //     <div className="flex justify-between mt-32 gap-7">
-        //         <div className="flex-1  w-full">
-        //             <AboutMe/>
-        //             <SpecializeIn/>
-        //             <Concerns/>
-        //             <MyExperience/>
-        //             <Reviews/>
-        //         </div>
-        //         <div className="flex-1 border w-full h-full px-8 py-7 rounded-xl">
-        //             <div className="border border-gray-200 rounded-xl py-3 px-6 flex justify-between items-center text-xl font-semibold">
-        //                 <p>Appointment Fee</p>
-        //                 <p className="text-[#3A643B]">₹699.00</p>
-        //             </div>
-        //                 <SelectSession/>
-        //                 <PickTimeSlot/>
-        //                 <SelectShift/>
-        //                 <button className='bg-[#3A643B] w-full py-4 mt-8 rounded-lg text-xl text-center font-semibold text-[#fff]'>Make an appointment</button>
-        //         </div>
-        //     </div>
-        // </div>
+            <div className="py-12 px-36 flex justify-end items-center gap-6">
+                <p className="text-gray-700 flex items-center gap-5 bg-gray-100 px-4 rounded-full py-2">Hair care  <IoMdClose /></p>
+                <p className="text-gray-700 flex items-center gap-5 bg-gray-100 px-4 rounded-full py-2">Female <IoMdClose /></p>
+                <p className="text-gray-700 flex items-center gap-5 bg-gray-100 px-4 rounded-full py-2">Rs.0-Rs.500 <IoMdClose /></p>
+                <p className="text-gray-700 flex items-center gap-5 bg-gray-100 px-4 rounded-full py-2">Hindi <IoMdClose /></p>
+            </div>
+            <DoctorCard/>
+        </div>
     );
 };
 
